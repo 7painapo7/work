@@ -11,5 +11,6 @@ Rails.application.routes.draw do
   # .../posts/1 や .../posts/3 に該当する
   get 'posts/:id/edit' => 'posts#edit', as: 'edit_post'
   patch 'posts/:id' => 'posts#update', as: 'update_post'
+  delete 'posts/:id' => 'posts#destroy', as: 'destroy_post'
 
 end
