@@ -10,10 +10,10 @@ class PostsController < ApplicationController
         redirect_to post_path(post.id) # 詳細画面へリダイレクト
     end
     def index
-      @posts = Post.all
+        @posts = Post.all
     end
     def show
-      @post = Post.find(params[:id])
+        @post = Post.find(params[:id])
     end
     def edit
         @post = Post.find(params[:id])
